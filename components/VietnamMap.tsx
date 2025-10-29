@@ -217,25 +217,6 @@ export function VietnamMap() {
           </button>
         </div>
 
-        {/* Legend */}
-        <div className="mb-4 md:absolute md:bottom-4 md:right-4 bg-white/95 backdrop-blur px-4 py-3 rounded-lg shadow-md">
-          <h4 className="font-bold text-gray-800 text-sm mb-2">Chú thích:</h4>
-          <div className="space-y-1.5 text-xs">
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 bg-red-600 rounded-full"></div>
-              <span>Sự kiện quan trọng cao</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-              <span>Sự kiện quan trọng vừa</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-              <span>Địa danh lịch sử khác</span>
-            </div>
-          </div>
-        </div>
-
         {/* Map Container */}
         <div
           className="relative bg-white rounded-xl shadow-inner border border-gray-200 overflow-hidden"
@@ -342,8 +323,8 @@ export function VietnamMap() {
         </div>
 
         {/* Region Info */}
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-red-50 border-2 border-red-300 rounded-lg p-4">
+        <div className="mt-6 grid grid-cols-5 gap-4">
+          <div className="col-span-2 bg-red-50 border-2 border-red-300 rounded-lg p-4">
             <h4 className="font-bold text-red-700 flex items-center gap-2 mb-2">
               <span className="w-3 h-3 bg-red-600 rounded-full"></span>
               Miền Bắc (1954-1975)
@@ -353,7 +334,7 @@ export function VietnamMap() {
               chiến chống Mỹ ở miền Nam.
             </p>
           </div>
-          <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-4">
+          <div className="col-span-2 col-start-3 bg-blue-50 border-2 border-blue-300 rounded-lg p-4">
             <h4 className="font-bold text-blue-700 flex items-center gap-2 mb-2">
               <span className="w-3 h-3 bg-blue-600 rounded-full"></span>
               Miền Nam (1954-1975)
@@ -363,15 +344,17 @@ export function VietnamMap() {
               khốc liệt nhất.
             </p>
           </div>
-          <div className="bg-green-50 border-2 border-green-300 rounded-lg p-4">
-            <h4 className="font-bold text-green-700 flex items-center gap-2 mb-2">
-              <span className="w-3 h-3 bg-green-600 rounded-full"></span>
-              Đường Trường Sơn
+          <div className="col-start-5 bg-blue-50 border-2 border-blue-300 rounded-lg p-4">
+            <h4 className="font-bold text-black flex items-center gap-2 mb-2">
+              Chú thích
             </h4>
-            <p className="text-xs text-gray-600">
-              Huyết mạch chi viện xuyên suốt chiều dọc đất nước, nối liền hai
-              miền Nam - Bắc.
-            </p>
+
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 bg-red-600 rounded-full"></div>
+              <span className="text-xs text-gray-600">
+                Sự kiện quan trọng cao
+              </span>
+            </div>
           </div>
         </div>
       </motion.div>

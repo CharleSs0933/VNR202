@@ -132,7 +132,9 @@ export default function TimelinePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-16">
+    <div className="relative isolate min-h-screen bg-gray-50 pt-16">
+      <div className="absolute inset-0 bg-[url('https://hinhnenpowerpoint.com/wp-content/uploads/images/cach-tao-hinh-nen-powerpoint-dep-ve-lich-su-viet-nam.jpg')] bg-cover bg-center blur-md z-[-1]"></div>
+
       <Navigation />
       <main className="mx-auto max-w-7xl px-6 py-12">
         <motion.div

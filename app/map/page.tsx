@@ -8,7 +8,9 @@ import { motion } from "framer-motion";
 
 export default function MapPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="relative isolate min-h-screen bg-gray-50">
+      <div className="absolute inset-0 bg-[url('https://hinhnenpowerpoint.com/wp-content/uploads/images/cach-tao-hinh-nen-powerpoint-dep-ve-lich-su-viet-nam.jpg')] bg-cover bg-center blur-md z-[-1]"></div>
+
       <Navigation />
       <ScrollIndicator />
       <BackToTop />
@@ -40,12 +42,23 @@ export default function MapPage() {
             <VietnamMap />
           </motion.div>
 
+          <div className="flex flex-col items-center p-6">
+            <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              Các địa điểm quan trọng
+            </h3>
+            <div className="space-y-2 text-sm text-gray-700">
+              <p className="flex items-center gap-2">
+                Hà Nội, Điện Biên Phủ, Vĩnh, Quảng Trị, Huế, Đà Nẵng, Bến Tre,
+                Ấp Bắc, Sài Gòn,
+              </p>
+            </div>
+          </div>
+
           {/* Additional Information */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 grid md:grid-cols-2 gap-6"
           >
             <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
@@ -81,33 +94,6 @@ export default function MapPage() {
                   </span>
                 </li>
               </ul>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <span className="text-2xl">📍</span>
-                Các địa điểm quan trọng
-              </h3>
-              <div className="space-y-2 text-sm text-gray-700">
-                <p className="flex items-center gap-2">
-                  <span className="w-3 h-3 bg-red-600 rounded-full"></span>
-                  <strong>10 sự kiện quan trọng cao:</strong> Hà Nội, Điện Biên
-                  Phủ, Vĩnh, Quảng Trị, Huế, Đà Nẵng, Bến Tre, Ấp Bắc, Sài Gòn,
-                  Củ Chi
-                </p>
-                <p className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 bg-orange-500 rounded-full"></span>
-                  <strong>3 sự kiện quan trọng vừa:</strong> Pleiku, Khe Sanh,
-                  Trường Sa
-                </p>
-                <div className="mt-4 pt-4 border-t border-gray-200">
-                  <p className="text-xs text-gray-500 italic">
-                    Bản đồ sử dụng dữ liệu GeoJSON chính thức với tọa độ GPS
-                    chính xác. Bao gồm cả quần đảo Hoàng Sa và Trường Sa - chủ
-                    quyền thiêng liêng của Việt Nam.
-                  </p>
-                </div>
-              </div>
             </div>
           </motion.div>
         </main>

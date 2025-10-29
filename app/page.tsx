@@ -56,7 +56,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="relative min-h-screen isolate bg-gray-50">
+      <div className="absolute inset-0 bg-[url('https://hinhnenpowerpoint.com/wp-content/uploads/images/cach-tao-hinh-nen-powerpoint-dep-ve-lich-su-viet-nam.jpg')] bg-cover bg-center blur-md z-[-1]"></div>
+
       <Navigation />
       <ScrollIndicator />
       <BackToTop />
@@ -133,7 +135,7 @@ export default function Home() {
                   icon={<Flag className="h-6 w-6" />}
                 >
                   <div className="mb-8">
-                    <h3 className="mb-6 text-2xl font-bold text-red-700 flex items-center">
+                    <h3 className="mb-6 text-2xl font-bold text-gray-50 flex items-center">
                       Khôi phục kinh tế, cải tạo XHCN ở miền Bắc – Chuyển cách
                       mạng miền Nam sang thế tiến công (1954–1960)
                     </h3>
@@ -283,17 +285,16 @@ export default function Home() {
                   icon={<Target className="h-6 w-6" />}
                 >
                   <div className="mb-8">
-                    <h3 className="mb-6 text-2xl font-bold text-red-700 flex items-center">
+                    <h3 className="mb-6 text-2xl font-bold text-gray-50 flex items-center">
                       Xây dựng CNXH ở miền Bắc – Phát triển thế tiến công của
                       cách mạng Việt Nam (1961–1965)
                     </h3>
 
                     {/* Image Placeholder */}
-                    <MediaPlaceholder
-                      type="image"
-                      title="Hình ảnh Đại hội Đảng lần III (9/1960)"
-                      note="Tìm hình ảnh: Đại hội Đảng toàn quốc lần III tháng 9/1960, xây dựng CNXH ở miền Bắc"
-                      className="mb-6"
+                    <img
+                      src="https://imgnvsk.vnanet.vn/MediaUpload/Org/2023/08/25/dh-3-125-10-54-14.jpg"
+                      alt="Đại hội Đảng toàn quốc lần III tháng 9/1960, xây dựng CNXH ở miền Bắc"
+                      className="w-full rounded-lg shadow-lg mb-6"
                     />
 
                     <div className="bg-blue-50 p-6 rounded-lg mb-6 border-l-4 border-blue-600">
@@ -354,12 +355,15 @@ export default function Home() {
                     </div>
 
                     {/* Video Placeholder */}
-                    <MediaPlaceholder
-                      type="video"
-                      title="Video Chiến thắng Ấp Bắc 2/1/1963"
-                      note="Tìm video: Chiến thắng Ấp Bắc 1963, quân dân miền Nam đánh bại chiến lược 'Chiến tranh đặc biệt' của Mỹ"
-                      className="mb-6"
-                    />
+                    <div className="aspect-video mb-6">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
+                        src="https://90sj56vdp0.ufs.sh/f/rSQkHC8t0FOUnPB1XwOKPBjDCQWIU3154Sglasi2YFMAeZ0h"
+                        title="Video lịch sử cải cách ruộng đất"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat"
+                        allowFullScreen
+                      />
+                    </div>
                   </div>
                 </Section>
               </motion.div>
@@ -378,11 +382,10 @@ export default function Home() {
                   icon={<TrendingUp className="h-6 w-6" />}
                 >
                   {/* Image Placeholder */}
-                  <MediaPlaceholder
-                    type="image"
-                    title="Quân Mỹ đổ bộ Đà Nẵng 8/3/1965"
-                    note="Tìm hình ảnh: Quân Mỹ đổ bộ vào Đà Nẵng 8/3/1965, máy bay B-52 ném bom miền Bắc"
-                    className="mb-6"
+                  <img
+                    src="https://nghiencuuquocte.org/wp-content/uploads/2020/03/08.jpg"
+                    alt="Quân Mỹ đổ bộ Đà Nẵng 8/3/1965"
+                    className="w-full rounded-lg shadow-lg mb-6"
                   />
 
                   <div className="bg-red-50 p-6 rounded-lg mb-6 border-l-4 border-red-600">
@@ -424,7 +427,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <h3 className="mb-4 text-xl font-bold text-gray-800 border-l-4 border-red-600 pl-4">
+                  <h3 className="mb-4 text-xl font-bold text-gray-50 border-l-4 border-red-600 pl-4">
                     Quá trình thực hiện đường lối (1965 - 1968)
                   </h3>
 
@@ -493,12 +496,15 @@ export default function Home() {
                   </Tabs>
 
                   {/* Video Placeholder */}
-                  <MediaPlaceholder
-                    type="video"
-                    title="Video Tổng tiến công Tết Mậu Thân 1968"
-                    note="Tìm video: Tổng tiến công Tết Mậu Thân 1968, chiến thắng lịch sử buộc Mỹ phải đàm phán, video phòng không Hà Nội bắn rơi máy bay B-52"
-                    className="mb-6"
-                  />
+                  <div className="aspect-video mb-6">
+                    <iframe
+                      className="w-full h-full rounded-lg shadow-lg"
+                      src="https://90sj56vdp0.ufs.sh/f/rSQkHC8t0FOUxKXocOlDpgUu5KzdemliBTow39JPE10qj4Nn"
+                      title="Video lịch sử cải cách ruộng đất"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat"
+                      allowFullScreen
+                    />
+                  </div>
                 </Section>
               </motion.div>
             )}
@@ -516,11 +522,10 @@ export default function Home() {
                   icon={<Flag className="h-6 w-6" />}
                 >
                   {/* Image Placeholder */}
-                  <MediaPlaceholder
-                    type="image"
-                    title="Chiến thắng Hà Nội - Điện Biên Phủ trên không"
-                    note="Tìm hình ảnh: Chiến dịch Điện Biên Phủ trên không 12 ngày đêm (12/1972), tên lửa SAM bắn hạ B-52, xác máy bay B-52 rơi ở Hà Nội"
-                    className="mb-6"
+                  <img
+                    src="https://file3.qdnd.vn/data/images/0/2023/12/22/upload_2049/b52.jpg?dpi=150&quality=100&w=870"
+                    alt="Hình ảnh miền Bắc thời kỳ 1954-1960"
+                    className="w-full rounded-lg shadow-lg mb-6"
                   />
 
                   <Tabs defaultValue="north2" className="w-full mb-6">
@@ -610,19 +615,21 @@ export default function Home() {
                   </Tabs>
 
                   {/* Video Placeholder */}
-                  <MediaPlaceholder
-                    type="video"
-                    title="Video Chiến dịch Hồ Chí Minh 30/4/1975"
-                    note="Tìm video: Chiến dịch Hồ Chí Minh mùa Xuân 1975, xe tăng húc đổ cổng Dinh Độc Lập 30/4/1975, lễ giải phóng Sài Gòn"
-                    className="mb-6"
-                  />
+                  <div className="aspect-video mb-6">
+                    <iframe
+                      className="w-full h-full rounded-lg shadow-lg"
+                      src="https://90sj56vdp0.ufs.sh/f/rSQkHC8t0FOUxKXocOlDpgUu5KzdemliBTow39JPE10qj4Nn"
+                      title="Video lịch sử cải cách ruộng đất"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat"
+                      allowFullScreen
+                    />
+                  </div>
 
                   {/* Image Placeholder */}
-                  <MediaPlaceholder
-                    type="image"
-                    title="Lịch sử 30/4/1975 - Giải phóng hoàn toàn miền Nam"
-                    note="Tìm hình ảnh: Xe tăng 390 húc đổ cổng Dinh Độc Lập 30/4/1975, cờ Tổ quốc tung bay trên Dinh Độc Lập, người dân Sài Gòn đón quân giải phóng"
-                    className="mb-6"
+                  <img
+                    src="https://file3.qdnd.vn/data/images/0/2022/04/26/thuyanh/30-4.jpg"
+                    alt="Hình ảnh miền Bắc thời kỳ 1954-1960"
+                    className="w-full rounded-lg shadow-lg mb-6"
                   />
                 </Section>
 
@@ -633,11 +640,10 @@ export default function Home() {
                     kinh nghiệm lãnh đạo
                   </h3>
                   {/* Image Placeholder */}
-                  <MediaPlaceholder
-                    type="image"
-                    title="Kỷ niệm chiến thắng lịch sử"
-                    note="Tìm hình ảnh: Lễ diễu binh kỷ niệm giải phóng miền Nam, nhân dân ăn mừng thống nhất đất nước, cờ đỏ sao vàng khắp đất nước"
-                    className="mb-6"
+                  <img
+                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/4/29/1499512/Dieu-Binh-84.jpg"
+                    alt="Hình ảnh miền Bắc thời kỳ 1954-1960"
+                    className="w-full rounded-lg shadow-lg mb-6"
                   />
 
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -711,14 +717,6 @@ export default function Home() {
                       </ul>
                     </div>
                   </div>
-
-                  {/* Video Placeholder */}
-                  <MediaPlaceholder
-                    type="video"
-                    title="Video tổng hợp chiến thắng lịch sử 1954-1975"
-                    note="Tìm video: Tổng hợp các sự kiện lịch sử từ 1954-1975, chiến thắng vĩ đại của dân tộc Việt Nam"
-                    className="mb-6"
-                  />
                 </div>
               </motion.div>
             )}

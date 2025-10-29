@@ -66,7 +66,9 @@ export default function ResourcesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-16">
+    <div className="relative isolate min-h-screen bg-gray-50 pt-16">
+      <div className="absolute inset-0 bg-[url('https://hinhnenpowerpoint.com/wp-content/uploads/images/cach-tao-hinh-nen-powerpoint-dep-ve-lich-su-viet-nam.jpg')] bg-cover bg-center blur-md z-[-1]"></div>
+
       <Navigation />
       <main className="mx-auto max-w-7xl px-6 py-12">
         <motion.div
@@ -211,7 +213,9 @@ export default function ResourcesPage() {
         >
           <Card className="bg-linear-to-r from-red-50 to-yellow-50 border-2 border-red-200">
             <CardHeader>
-              <CardTitle className="text-2xl">Liên kết hữu ích</CardTitle>
+              <CardTitle className="text-2xl text-gray-800">
+                Liên kết hữu ích
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               <a
@@ -220,7 +224,9 @@ export default function ResourcesPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4 hover:bg-gray-50 transition-colors"
               >
-                <span className="font-medium">Bảo tàng Lịch sử Quốc gia</span>
+                <span className="font-medium text-gray-800">
+                  Bảo tàng Lịch sử Quốc gia
+                </span>
                 <ExternalLink className="h-5 w-5 text-gray-400" />
               </a>
               <a
@@ -229,7 +235,9 @@ export default function ResourcesPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4 hover:bg-gray-50 transition-colors"
               >
-                <span className="font-medium">Báo Đại Đoàn Kết</span>
+                <span className="font-medium text-gray-800">
+                  Báo Đại Đoàn Kết
+                </span>
                 <ExternalLink className="h-5 w-5 text-gray-400" />
               </a>
               <a
@@ -238,7 +246,9 @@ export default function ResourcesPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4 hover:bg-gray-50 transition-colors"
               >
-                <span className="font-medium">Tạp chí Cộng sản</span>
+                <span className="font-medium text-gray-800">
+                  Tạp chí Cộng sản
+                </span>
                 <ExternalLink className="h-5 w-5 text-gray-400" />
               </a>
             </CardContent>

@@ -29,8 +29,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-8 flex justify-center"
           >
-            <div className="rounded-full bg-yellow-400 p-4">
-              <Star className="h-16 w-16 text-red-900 fill-red-900" />
+            <div className="size-20 rounded-full bg-red-600 flex items-center justify-center">
+              <span className="text-yellow-400 text-5xl">★</span>
             </div>
           </motion.div>
 
@@ -40,7 +40,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl font-bold tracking-tight sm:text-6xl mb-6"
           >
-            Lãnh đạo xây dựng CNXH ở miền Bắc
+            Ánh Bình Minh Trên Đất Việt
           </motion.h1>
 
           <motion.h2
@@ -49,7 +49,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-2xl sm:text-3xl mb-8"
           >
-            và kháng chiến chống đế quốc Mỹ xâm lược
+            Lãnh đạo xây dựng CNXH ở miền Bắc và kháng chiến chống đế quốc Mỹ
+            xâm lược
           </motion.h2>
 
           <motion.div
@@ -84,7 +85,7 @@ export function Hero() {
         >
           <path
             d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
-            fill="rgb(249, 250, 251)"
+            fill="rgb(170, 146, 6)"
           />
         </svg>
       </div>
