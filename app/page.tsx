@@ -489,7 +489,7 @@ export default function Home() {
                   <div className="aspect-video mb-6">
                     <iframe
                       className="w-full h-full rounded-lg shadow-lg"
-                      src="https://90sj56vdp0.ufs.sh/f/rSQkHC8t0FOUxKXocOlDpgUu5KzdemliBTow39JPE10qj4Nn"
+                      src="https://90sj56vdp0.ufs.sh/f/rSQkHC8t0FOUNFNIfHo28FwTmLpB5IJHaEYRUMtAsySq470k"
                       title="Video lịch sử cải cách ruộng đất"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; repeat"
                       allowFullScreen
