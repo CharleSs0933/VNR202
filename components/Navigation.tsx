@@ -12,7 +12,7 @@ export function Navigation() {
     { href: "/", label: "Trang chủ", icon: Home },
     { href: "/map", label: "Bản đồ", icon: MapPin },
     { href: "/timeline", label: "Dòng thời gian", icon: Map },
-    { href: "/resources", label: "Tài liệu", icon: BookOpen },
+    { href: "/resources", label: "AI Usage", icon: BookOpen },
   ];
 
   return (
