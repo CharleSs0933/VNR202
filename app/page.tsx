@@ -2,26 +2,16 @@
 
 import { Hero } from "@/components/Hero";
 import { Section, SubSection } from "@/components/Section";
-import { Timeline } from "@/components/Timeline";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
 import { BackToTop } from "@/components/BackToTop";
 import { Navigation } from "@/components/Navigation";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import { MediaPlaceholder } from "@/components/ImagePlaceholder";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import {
-  BookOpen,
-  Flag,
-  Globe,
-  Lightbulb,
-  Target,
-  TrendingUp,
-} from "lucide-react";
+import { Flag, Globe, Lightbulb, Target, TrendingUp } from "lucide-react";
 
 export default function Home() {
-  const [searchQuery, setSearchQuery] = useState("");
   const [activeSection, setActiveSection] = useState("section1");
 
   const timelineData = [
